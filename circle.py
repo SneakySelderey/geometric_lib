@@ -2,9 +2,24 @@ import math
 
 
 def area(r):
+    """Returns an area of given circle
+
+    Args:
+        r (int/float): radius of the circle
+
+    Returns:
+        int/float: area of the circle
+    """
     return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * math.pi * r
+    """Returns a circumference of given circle
 
+    Args:
+        r (int/float): radius of the circle
+
+    Returns:
+        int/float: circumference of the circle
+    """
+    return 2 * math.pi * r
