@@ -1,5 +1,5 @@
 
-def area(a):
+def get_square_area(a):
     """Returns an area of given square
 
     Args:
@@ -11,7 +11,7 @@ def area(a):
     return a * a
 
 
-def perimeter(a):
+def get_square_perimeter(a):
     """Returns a perimeter of given square
 
     Args:

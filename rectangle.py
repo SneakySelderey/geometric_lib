@@ -1,4 +1,4 @@
-def area(a, b):
+def get_rectangle_area(a, b):
     """Returns an area of given rectangle
 
     Args:
@@ -10,7 +10,7 @@ def area(a, b):
     """
     return a * b 
 
-def perimeter(a, b):
+def get_rectangle_perimeter(a, b):
     """Returns a perimeter of given rectangle
 
     Args:

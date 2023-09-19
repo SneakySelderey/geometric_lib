@@ -1,4 +1,4 @@
-def area(a, h):
+def get_triangle_area(a, h):
     """Returns an area of given triangle
 
     Args:
@@ -10,7 +10,7 @@ def area(a, h):
     """
     return a * h / 2 
 
-def perimeter(a, b, c):
+def get_triangle_perimeter(a, b, c):
     """Returns a perimeter of given triangle
 
     Args:
