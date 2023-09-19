@@ -1,5 +1,5 @@
 def area(a, b):
-    """return an area of given rectangle
+    """Returns an area of given rectangle
 
     Args:
         a (int/float): one side of the rectangle
@@ -11,7 +11,7 @@ def area(a, b):
     return a * b 
 
 def perimeter(a, b):
-    """returns a perimeter of given rectangle
+    """Returns a perimeter of given rectangle
 
     Args:
         a (int/float): one side of the rectangle

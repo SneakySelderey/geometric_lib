@@ -1,5 +1,5 @@
 def area(a, h):
-    """return an area of given triangle
+    """Returns an area of given triangle
 
     Args:
         a (int/float): side of the triangle
@@ -11,7 +11,7 @@ def area(a, h):
     return a * h / 2 
 
 def perimeter(a, b, c):
-    """return a perimeter of given triangle
+    """Returns a perimeter of given triangle
 
     Args:
         a (int/float): first side of the triangle
