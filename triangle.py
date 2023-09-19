@@ -6,7 +6,7 @@ def get_triangle_area(a, h):
         h (int/float): height of the triangle that drops on side "a"
 
     Returns:
-        int/float: area of the triangle
+        float: area of the triangle
     """
     return a * h / 2 
 
