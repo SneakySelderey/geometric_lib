@@ -11,6 +11,12 @@
 - Square: P = 4a
 - Triangle: P = a + b + c
 
+### Table of formules
+| Parameter | Circle | Rectangle | Square | Triangle |
+|-----------|  :---: |   :---:   |  :---: |  :---:   |
+| Area      | πR² | ab | a² | ah |
+| Perimeter | 2πR | 2a + 2b | 4a | a + b + c |
+
 # Functions description
 ## Area
 - get_circle_area(r) - returns an area of given circle  
