@@ -13,7 +13,7 @@
 
 ### Table of formules
 | Parameter | Circle | Rectangle | Square | Triangle |
-|-----------|  :---: |   :---:   |  :---: |  :---:   |
+|   :---:   |  :---: |   :---:   |  :---: |  :---:   |
 | Area      | πR² | ab | a² | ah |
 | Perimeter | 2πR | 2a + 2b | 4a | a + b + c |
 
