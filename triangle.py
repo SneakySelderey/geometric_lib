@@ -13,21 +13,21 @@ class TriangleTestCase(unittest.TestCase):
         pass
 
 
-    def test_area_zero_side_or_height(self):
-        """Test function for zero side or height area case
+    def test_area_negative_or_zero_side_or_height(self):
+        """Test function for negative or zero side or height area case
         """
-        for x in [0, 5]:
-            for y in [0, 5]:
+        for x in [-1, 0, 5]:
+            for y in [-1, 0, 5]:
                 if [x, y] != [5, 5]:
                     self.assertRaises(ValueError, get_triangle_area, x, y)
 
 
-    def test_perimeter_zero_side(self):
-        """Test function for zero sides perimeter case
+    def test_perimeter_negative_or_zero_side(self):
+        """Test function for negative or zero sides perimeter case
         """
-        for x in [0, 5, 10]:
-            for y in [0, 5, 10]:
-                for z in [0, 5, 10]:
+        for x in [-1, 0, 5, 10]:
+            for y in [-1, 0, 5, 10]:
+                for z in [-1, 0, 5, 10]:
                     if x * y * z == 0:
                         self.assertRaises(ValueError, get_triangle_perimeter, x, y, z)
 
@@ -42,25 +42,6 @@ class TriangleTestCase(unittest.TestCase):
         """Test function for float sides perimeter case
         """
         self.assertEqual(get_triangle_perimeter(6.82, 3.57, 7.25), 17.64, 4)
-
-
-    def test_area_negative_values(self):
-        """Test function for negative values area case
-        """
-        for x in [-1, 5]:
-            for y in [-1, 5]:
-                if [x, y] != [5, 5]:
-                    self.assertRaises(ValueError, get_triangle_area, x, y)
-
-
-    def test_perimeter_negative_values(self):
-        """Test function for negative values area case
-        """
-        for x in [-1, 5, 10]:
-            for y in [-1, 5, 10]:
-                for z in [-1, 5, 10]:
-                    if x < 0 or y < 0 or z < 0:
-                        self.assertRaises(ValueError, get_triangle_perimeter, x, y, z)
 
 
     def test_area_int_values(self):

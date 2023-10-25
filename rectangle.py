@@ -13,42 +13,46 @@ class RectangleTestCase(unittest.TestCase):
         pass
 
 
-    def test_area_zero_sides(self):
-        """Test function for zero sides area case
+    def test_perimeter_negative_or_zero_values(self):
+        """Test function for negative or zero values perimeter case
         """
-        self.assertEqual(get_rectangle_area(0, 0), 0)
+        for x in [-1, 0, 5]:
+            for y in [-1, 0, 5]:
+                if [x, y] != [5, 5]:
+                    self.assertRaises(ValueError, get_rectangle_perimeter, x, y)
 
 
-    def test_perimeter_zero_sides(self):
-        """Test function for zero sides perimeter case
+    def test_area_negative_or_zero_values(self):
+        """Test function for negativeor zero values area case
         """
-        self.assertEqual(get_rectangle_perimeter(0, 0), 0)
+        for x in [-1, 5, 0]:
+            for y in [-1, 5, 0]:
+                if [x, y] != [5, 5]:
+                    self.assertRaises(ValueError, get_rectangle_area, x, y)
 
 
-    def test_area_zero_side(self):
-        """Test function for zero side area case
-        """
-        self.assertEqual(get_rectangle_area(0, 5), 0)
-        self.assertEqual(get_rectangle_area(5, 0), 0)
-
-
-    def test_perimeter_zero_side(self):
-        """Test function for zero side perimeter case
-        """
-        self.assertEqual(get_rectangle_perimeter(0, 5), 0)
-        self.assertEqual(get_rectangle_perimeter(5, 0), 0)
-
-
-    def test_area_float_sides(self):
-        """Test function for float sides area case
+    def test_area_float_values(self):
+        """Test function for float values area case
         """
         self.assertAlmostEqual(get_rectangle_area(4.23, 6.82), 28.8486, 4)
 
 
-    def test_perimeter_float_sides(self):
-        """Test function for float sides perimeter case
+    def test_perimeter_float_values(self):
+        """Test function for float values perimeter case
         """
         self.assertEqual(get_rectangle_perimeter(4.23, 6.82), 22.1, 4)
+
+
+    def test_area_int_values(self):
+        """Test function for int values area case
+        """
+        self.assertEqual(get_rectangle_area(4, 6), 24)
+
+
+    def test_perimeter_int_values(self):
+        """Test function for int values perimeter case
+        """
+        self.assertEqual(get_rectangle_perimeter(4, 6), 20)
 
 
 def get_rectangle_area(a, b):

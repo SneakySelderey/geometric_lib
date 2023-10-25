@@ -2,7 +2,7 @@ import unittest
 
 
 class SquareTestCase(unittest.TestCase):
-    """Class of tests for rectangle.py functions
+    """Class of tests for square.py functions
 
     Args:
         unittest (TestCase): parent class
@@ -13,28 +13,44 @@ class SquareTestCase(unittest.TestCase):
         pass
 
 
-    def test_area_zero_sides(self):
-        """Test function for zero sides area case
+    def test_perimeter_negative_or_zero_values(self):
+        """Test function for negative or zero values perimeter case
         """
-        self.assertEqual(get_square_area(0), 0)
+        for x in [-1, 0, 5]:
+            if x != 5:
+                self.assertRaises(ValueError, get_square_area, x)
 
 
-    def test_perimeter_zero_sides(self):
-        """Test function for zero sides perimeter case
+    def test_area_negative_or_zero_values(self):
+        """Test function for negativeor zero values area case
         """
-        self.assertEqual(get_square_perimeter(0), 0)
+        for x in [-1, 5, 0]:
+            if x != 5:
+                self.assertRaises(ValueError, get_square_area, x)
 
 
-    def test_area_float_sides(self):
-        """Test function for float sides area case
+    def test_area_float_values(self):
+        """Test function for float sides values case
         """
         self.assertAlmostEqual(get_square_area(6.82), 46.5124, 4)
 
 
-    def test_perimeter_float_sides(self):
-        """Test function for float sides perimeter case
+    def test_perimeter_float_values(self):
+        """Test function for float values perimeter case
         """
         self.assertEqual(get_square_perimeter(6.82), 27.28, 4)
+
+
+    def test_area_int_values(self):
+        """Test function for int values area case
+        """
+        self.assertEqual(get_square_area(6), 36)
+
+
+    def test_perimeter_int_values(self):
+        """Test function for int values perimeter case
+        """
+        self.assertEqual(get_square_perimeter(6), 24)
 
 
 
