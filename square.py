@@ -1,7 +1,7 @@
 import unittest
 
 
-class RectangleTestCase(unittest.TestCase):
+class SquareTestCase(unittest.TestCase):
     """Class of tests for rectangle.py functions
 
     Args:
