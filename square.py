@@ -38,7 +38,7 @@ class SquareTestCase(unittest.TestCase):
     def test_perimeter_float_values(self):
         """Test function for float values perimeter case
         """
-        self.assertEqual(get_square_perimeter(6.82), 27.28, 4)
+        self.assertEqual(get_square_perimeter(6.82), 27.28)
 
 
     def test_area_int_values(self):

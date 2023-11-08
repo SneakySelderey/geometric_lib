@@ -41,7 +41,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_perimeter_float_sides(self):
         """Test function for float sides perimeter case
         """
-        self.assertEqual(get_triangle_perimeter(6.82, 3.57, 7.25), 17.64, 4)
+        self.assertEqual(get_triangle_perimeter(6.82, 3.57, 7.25), 17.64)
 
 
     def test_area_int_values(self):

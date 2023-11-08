@@ -40,7 +40,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_perimeter_float_values(self):
         """Test function for float values perimeter case
         """
-        self.assertEqual(get_rectangle_perimeter(4.23, 6.82), 22.1, 4)
+        self.assertEqual(get_rectangle_perimeter(4.23, 6.82), 22.1)
 
 
     def test_area_int_values(self):
@@ -65,7 +65,7 @@ def get_rectangle_area(a, b):
     Returns:
         int/float: area of the rectangle
     """
-    return a * b 
+    return a * b
 
 def get_rectangle_perimeter(a, b):
     """Returns a perimeter of given rectangle
@@ -77,4 +77,4 @@ def get_rectangle_perimeter(a, b):
     Returns:
         int/float: perimeter of the rectangle
     """
-    return 2 * (a + b) 
+    return 2 * (a + b)
