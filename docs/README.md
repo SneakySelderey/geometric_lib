@@ -42,3 +42,6 @@
 - v.0.0.3 - added tests for all functions
 - v.0.0.2 - updated documentation
 - v.0.0.1 - added rectangle and triangle math functions
+
+# Tests
+Autotests passed: 16/24 (67%)
