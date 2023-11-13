@@ -37,3 +37,11 @@
     get_square_perimeter(5) -> 20
 - get_triangle_perimeter(a, h) - returns a perimeter of given triangle  
     get_triangle_perimeter(5, 10, 15) -> 30
+
+# Version history
+- v.0.0.3 - added tests for all functions
+- v.0.0.2 - updated documentation
+- v.0.0.1 - added rectangle and triangle math functions
+
+# Tests
+Autotests passed: 16/24 (67%)
