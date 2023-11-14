@@ -1,11 +1,11 @@
-name: main
+name: Run unittests
 
 on:
   push:
 
 jobs:
   Run-tests-on-Ubuntu:
-    name: Run tests on Ubuntu
+    name: Run unittests on Ubuntu
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v4
@@ -19,7 +19,7 @@ jobs:
           run: python -m unittest square.py
 
   Run-tests-on-Windows:
-      name: Run tests on Windows
+      name: Run unittests on Windows
       runs-on: windows-latest
       steps:
         - uses: actions/checkout@v4
