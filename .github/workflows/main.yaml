@@ -1,0 +1,33 @@
+name: Run unittests
+
+on:
+  push:
+
+jobs:
+  Run-tests-on-Ubuntu:
+    name: Run unittests on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: run unittest circle
+          run: python -m unittest circle.py
+        - name: run unittest triangle
+          run: python -m unittest triangle.py
+        - name: run unittest rectangle
+          run: python -m unittest rectangle.py
+        - name: run unittest square
+          run: python -m unittest square.py
+
+  Run-tests-on-Windows:
+      name: Run unittests on Windows
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: run unittest circle
+          run: python -m unittest circle.py
+        - name: run unittest triangle
+          run: python -m unittest triangle.py
+        - name: run unittest rectangle
+          run: python -m unittest rectangle.py
+        - name: run unittest square
+          run: python -m unittest square.py
